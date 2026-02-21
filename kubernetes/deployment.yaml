@@ -24,6 +24,8 @@ spec:
         version: v1
     
     spec:
+      imagePullSecrets:
+      - name: ghcr-secret
       containers:
       - name: model-serving
         image: ghcr.io/bhavinvadalia/ml-model-serving:latest
