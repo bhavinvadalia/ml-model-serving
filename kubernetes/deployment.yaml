@@ -6,7 +6,7 @@ metadata:
     app: ml-model-serving
     version: v1
 spec:
-  replicas: 3  # Run 3 copies of the pod
+  replicas: 1  # Run 3 copies of the pod
   strategy:
     type: RollingUpdate  # Replace pods one at a time during updates
     rollingUpdate:
